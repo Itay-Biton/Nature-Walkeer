@@ -38,37 +38,37 @@
 
 ## Screenshots
 
-**Dashboard
+<p align="center">Dashboard</p>
 <p align="center">
    <img src="./Screenshots/Dashboard1.png" alt="Dashboard 1" width="200"/> 
    <img src="./Screenshots/Dashboard2.png" alt="Dashboard 2" width="200"/> 
 </p>
 
-**Sport Data
+<p align="center">Sport Data</p>
 <p align="center">
    <img src="./Screenshots/Sport1.png" alt="Sport 1" width="200"/> 
    <img src="./Screenshots/Sport2.png" alt="Sport 2" width="200"/> 
 </p>
 
-**Store
+<p align="center">Store</p>
 <p align="center">
    <img src="./Screenshots/Store1.png" alt="Store 1" width="200"/> 
    <img src="./Screenshots/Store2.png" alt="Store 2" width="200"/> 
    <img src="./Screenshots/Store3.png" alt="Store 3" width="200"/> 
 </p>
 
-**Plant Care
+<p align="center">Plant Care</p>
 <p align="center">
    <img src="./Screenshots/Plant1.png" alt="Plant 1" width="200"/> 
    <img src="./Screenshots/Plant2.png" alt="Plant 2" width="200"/> 
 </p>
 
-**Challenge Yourself
+<p align="center">Challenge Yourself</p>
 <p align="center">
    <img src="./Screenshots/Challenge.png" alt="Challenge" width="200"/> 
 </p>
 
-**Compete Againts Others
+<p align="center">Compete Againts Others</p>
 <p align="center">
    <img src="./Screenshots/Leaderboard.png" alt="Leaderboard" width="200"/> 
 </p>
