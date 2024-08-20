@@ -17,10 +17,9 @@ public class App extends Application {
         FirebaseApp.initializeApp(this);
         new DataManager();
         new UserManager();
-        // TODO: plant management
         // TODO: page animations
         // TODO: plant animations
-        // TODO: icon
+        // TODO: better icon
 //        DataManager.addBoost(new Boost("Speed Boost", 300.0,Duration.ofMinutes(40).plusMinutes(5), 2.0));
 //        DataManager.addBoost(new Boost("Power Boost", 500.0, Duration.ofHours(1).plusMinutes(20), 3.0));
 //        DataManager.addBoost(new Boost("Endurance Boost", 200.0, Duration.ofMinutes(30), 1.5));

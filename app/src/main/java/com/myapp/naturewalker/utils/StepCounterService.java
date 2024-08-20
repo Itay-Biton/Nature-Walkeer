@@ -66,8 +66,6 @@ public class StepCounterService extends Service implements SensorEventListener {
         User.getInstance().addCoins(coinsEarned);
         LocalData.updateActiveUserChallenges(deltaSteps);
         DataManager.updateUserTodaySteps();
-
-        // TODO: update the server with buffer, not every change.
     }
 
     static public void resetInitialStepCount() {
