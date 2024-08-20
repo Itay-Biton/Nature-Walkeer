@@ -95,7 +95,7 @@
 ## Download and Install Nature Walker
 
 1. **Download the App:**
-   - Click [here](https://github.com/Itay-Biton/Nature-Walkeer/releases/download/v1.0/Nature-Walker-Installation.apk) to download the latest version of the `Nature-Walker-Installation.apk`.
+   - Click [here](https://github.com/Itay-Biton/Nature-Walker/blob/main/Nature-Walker-Installation.apk) to download the latest version of the `Nature-Walker-Installation.apk`.
 
 2. **Bypass Google Virus Scan:**
    - If prompted by Google, you can safely bypass the virus scan warning. The APK is secure and has been tested thoroughly.
