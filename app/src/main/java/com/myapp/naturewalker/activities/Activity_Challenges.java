@@ -73,6 +73,7 @@ public class Activity_Challenges extends AppCompatActivity {
             public void success(Object o) {
                 Toast.makeText(Activity_Challenges.this, "Success", Toast.LENGTH_SHORT).show();
                 swapAdapters();
+                getData();
             }
             @Override
             public void failed(Object o) {
