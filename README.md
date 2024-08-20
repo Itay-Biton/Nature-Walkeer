@@ -3,6 +3,7 @@
 
 **Nature Walkeer** is an Android application designed to encourage users to stay active by walking. The app tracks daily steps, converts them into coins, and allows users to use these coins to purchase in-app upgrades and plants. Users can activate boosts, care for plants, and participate in challenges. The app also includes features for user authentication and profile management.
 
+
 ## Features
 
 ### 1. Step Tracking
@@ -108,4 +109,23 @@
 After installing the app, you can sign up with your email or use Google Authentication to log in. Start walking, earn coins, and enjoy the interactive features Nature Walker offers.
 
 
+## Contact
+
+If you have any questions or feedback, don't hesitate to get in touch via [email](mailto:itaybit10@gmail.com).
+
+
+## License and Copyright
+
+© 2024 Itay Biton. All rights reserved.
+
+This project is owned by Itay Biton. Any unauthorized reproduction, modification, distribution, or use of this project, in whole or in part, is strictly prohibited without explicit permission from the author.
+
+For academic purposes or personal review, please ensure proper credit is given to Itay Biton, and include a link to the original repository.
+
+This project is intended for portfolio demonstration purposes only and must not be duplicated or repurposed without permission. If you're interested in collaborating or using parts of this project for educational reasons, please contact me directly.
+
+
+## Note to Recruiters
+
+Please note that this project is part of my professional portfolio and should not be copied or reused. If you’re interested in my work or would like to discuss potential job opportunities, feel free to reach out via the provided email. I am open to exploring new projects and opportunities.
 
