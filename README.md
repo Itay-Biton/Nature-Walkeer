@@ -106,7 +106,7 @@
 
 ## Getting Started
 
-After installing the app, you can sign up with your email or use Google Authentication to log in. Start walking, earn coins, and enjoy the interactive features Nature Walker offers.
+After installing the app, you can sign up with your email to log in. Start walking, earn coins, and enjoy the interactive features Nature Walker offers.
 
 
 ## Contact
