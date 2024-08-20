@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/top_bar"/>
+
+    <TextView
+        android:id="@+id/subtitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Here you can\nbuy items"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/CoinsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="0000000000"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="@id/CoinsIcon"
+        app:layout_constraintBottom_toBottomOf="@id/CoinsIcon"
+        app:layout_constraintEnd_toStartOf="@id/CoinsIcon"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/CoinsIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_coins"
+        app:layout_constraintTop_toTopOf="@+id/top_bar"
+        app:layout_constraintBottom_toBottomOf="@+id/top_bar"
+        app:layout_constraintEnd_toEndOf="@+id/top_bar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemsRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitleTextView" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@drawable/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

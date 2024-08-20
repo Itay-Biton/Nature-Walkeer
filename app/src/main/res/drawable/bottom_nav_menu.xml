@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_boosts"
+        android:icon="@drawable/ic_boost"
+        android:title="@string/category_1" />
+    <item
+        android:id="@+id/nav_upgrades"
+        android:icon="@drawable/ic_upgrades"
+        android:title="@string/category_2" />
+    <item
+        android:id="@+id/nav_plants"
+        android:icon="@drawable/ic_plant_care"
+        android:title="@string/category_3" />
+</menu>

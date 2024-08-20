@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <include layout="@layout/top_bar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <com.myapp.naturewalker.custom_views.CircularProgressView
+            android:id="@+id/plantProgress"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/IMG_plant_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_plant"
+            android:layout_gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/TXT_plant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal | bottom"
+            android:layout_marginBottom="25dp"
+            android:text="plant name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/countdownTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="16dp"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:id="@+id/BTN_harvest"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:text="Harvest"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/TXT_harvest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="harvest in 10 minutes"
+            android:layout_alignTop="@+id/BTN_harvest"
+            android:layout_alignBottom="@+id/BTN_harvest"
+            android:layout_toEndOf="@+id/BTN_harvest"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Plants:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="32dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_plants_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

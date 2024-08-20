@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NatureWalker</string>
+    <string name="sport">Sport Data</string>
+    <string name="store">Store</string>
+    <string name="plant">Plant</string>
+    <string name="challenges">Challenges</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="profile">Profile</string>
+    <string name="category_1">Boosts</string>
+    <string name="category_2">Upgrades</string>
+    <string name="category_3">Plants</string>
+</resources>

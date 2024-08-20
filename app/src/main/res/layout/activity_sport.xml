@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <include layout="@layout/top_bar"/>
+
+        <com.myapp.naturewalker.custom_views.WeeklyStepsBarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Average steps\nthis week"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/TXT_avg_steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="82%"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/LBL_step_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change from yesterday"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/TXT_step_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+253 steps"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="32dp"
+            android:text="Proggress"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp">
+
+            <com.myapp.naturewalker.custom_views.CircularProgressView
+                android:id="@+id/challengeProgress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <com.myapp.naturewalker.custom_views.CircularProgressView
+                android:id="@+id/dailyProgress"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"/>
+
+            <com.myapp.naturewalker.custom_views.CircularProgressView
+                android:id="@+id/weeklyProgress"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@android:color/holo_blue_light"/>
+
+                <TextView
+                    android:id="@+id/TXT_challenge_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="challenge"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/TXT_challenge_step_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4932"/>
+
+                <TextView
+                    android:id="@+id/TXT_challenge_progress"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:text="62%"
+                    android:textAlignment="textEnd"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_green"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="8dp"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/TXT_daily_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="daily"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/TXT_daily_step_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3451"/>
+
+                <TextView
+                    android:id="@+id/TXT_daily_progress"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:text="56%"
+                    android:textAlignment="textEnd"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_green"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@android:color/holo_green_light"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/TXT_weekly_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="weekly"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/TXT_weekly_step_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19035"/>
+
+                <TextView
+                    android:id="@+id/TXT_weekly_progress"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:text="40%"
+                    android:textAlignment="textEnd"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

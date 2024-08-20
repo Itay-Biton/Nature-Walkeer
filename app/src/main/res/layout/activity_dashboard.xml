@@ -1,0 +1,389 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/BTN_profile"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_profile"
+                android:background="@null"
+                android:scaleType="fitCenter"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/profileIcon"
+                android:layout_alignTop="@+id/profileIcon"
+                android:layout_alignBottom="@+id/profileIcon"
+                android:gravity="center"
+                android:text="Profile"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:text="Dashboard"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2"
+            app:rowCount="2">
+
+            <!-- Coins Per Step -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coins Per Step:" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/TXT_cps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.6"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/TXT_boost_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boost end in 00:00:00"
+                    android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+
+            <!-- Coins -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coins:" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/TXT_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2453"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Steps -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Steps:" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/TXT_steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3,518"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Boost Now -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quickstart a boost" />
+                <Spinner
+                    android:id="@+id/boost_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/BTN_use_boost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boost Now" />
+            </LinearLayout>
+        </androidx.gridlayout.widget.GridLayout>
+
+        <!-- Plant Progress -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp">
+
+            <com.myapp.naturewalker.custom_views.CircularProgressView
+                android:id="@+id/plantProgress"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/IMG_plant_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_plant"
+                android:layout_gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/TXT_plant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="25dp"
+                android:text="plant name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </FrameLayout>
+
+        <!-- Goals -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+            <!-- Circular progress indicators -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <com.myapp.naturewalker.custom_views.CircularProgressView
+                    android:id="@+id/dailyGoalProgress"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="daily\ngoal"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <com.myapp.naturewalker.custom_views.CircularProgressView
+                    android:id="@+id/weeklyGoalProgress"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="weekly\ngoal"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <com.myapp.naturewalker.custom_views.CircularProgressView
+                    android:id="@+id/activeChallengeProgress"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="active\nchallenge"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Bottom Buttons -->
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2"
+            app:rowCount="2"
+            android:layout_marginTop="32dp">
+
+            <RelativeLayout
+                android:id="@+id/BTN_shop"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:background="@color/yellow">
+
+                <ImageView
+                    android:id="@+id/icon_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_above="@+id/text_shop"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_shop"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/store"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/BTN_sport"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:background="@color/orange">
+
+                <ImageView
+                    android:id="@+id/icon_run"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_above="@+id/text_run"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_run"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_run"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/sport"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/BTN_plant"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:background="@color/green">
+
+                <ImageView
+                    android:id="@+id/icon_plant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_above="@+id/text_plant"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_plant"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_plant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/plant"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/BTN_challenges"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:background="@color/blue">
+
+                <ImageView
+                    android:id="@+id/icon_challenges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_above="@+id/text_challenges"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_challenges"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_challenges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/challenges"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

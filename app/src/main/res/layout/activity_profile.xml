@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <include layout="@layout/top_bar"/>
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/IMG_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_profile"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+
+        <!-- Display Name -->
+        <TextView
+            android:id="@+id/TXT_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/TXT_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user@example.com"
+            android:textSize="16sp"
+            android:textColor="#777"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <!-- Change Image Section -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDD"
+            android:layout_marginTop="24dp" />
+
+        <EditText
+            android:id="@+id/TXT_image_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Image URL"
+            android:inputType="textUri"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@color/light_gray"/>
+
+        <Button
+            android:id="@+id/BTN_save_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Profile Picture"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"
+            android:padding="16dp"/>
+
+        <!-- Change Password Section -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDD"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
+
+        <!-- New Password -->
+        <EditText
+            android:id="@+id/TXT_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@color/light_gray" />
+
+        <!-- Confirm New Password -->
+        <EditText
+            android:id="@+id/TXT_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm New Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@color/light_gray" />
+
+        <!-- Change Password Button -->
+        <Button
+            android:id="@+id/BTN_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>

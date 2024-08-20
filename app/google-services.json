@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "971724032532",
+    "firebase_url": "https://naturewalker-24026-default-rtdb.firebaseio.com",
+    "project_id": "naturewalker-24026",
+    "storage_bucket": "naturewalker-24026.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971724032532:android:694e5bd6cc1d2066937501",
+        "android_client_info": {
+          "package_name": "com.myapp.naturewalker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971724032532-n92nspdqqn69g8k030r4l14cgth1q3hr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myapp.naturewalker",
+            "certificate_hash": "8a5c0721783bca15f78dd237b53efb6f27bbce99"
+          }
+        },
+        {
+          "client_id": "971724032532-tj8oq0od56u8jqkv4e1434gsr5pc73i5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKSA1eqnfIP4akfV14_Ra9s0t1BjwfYr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971724032532-tj8oq0od56u8jqkv4e1434gsr5pc73i5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
