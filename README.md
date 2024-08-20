@@ -36,6 +36,48 @@
 - **Manage Plants**: Use coins earned from walking to buy plants, care for them, and harvest rewards.
 - **Profile Management**: Users can update their profile picture, email, and password.
 
-## Contributing
+## Screenshots
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create a pull request or open an issue.
+<p align="center">
+   Dashboard
+   <img src="./Screenshots/Dashboard1" alt="Dashboard 1" width="200"/> 
+   <img src="./Screenshots/Dashboard2" alt="Dashboard 2" width="200"/> 
+</p>
+
+<p align="center">
+   Sport Data
+   <img src="./Screenshots/Sport1" alt="Sport 1" width="200"/> 
+   <img src="./Screenshots/Sport2" alt="Sport 2" width="200"/> 
+</p>
+
+<p align="center">
+   Store
+   <img src="./Screenshots/Store1" alt="Store 1" width="200"/> 
+   <img src="./Screenshots/Store2" alt="Store 2" width="200"/> 
+   <img src="./Screenshots/Store3" alt="Store 3" width="200"/> 
+</p>
+
+<p align="center">
+   Plant Care
+   <img src="./Screenshots/Plant1" alt="Plant 1" width="200"/> 
+   <img src="./Screenshots/Plant2" alt="Plant 2" width="200"/> 
+</p>
+
+<p align="center">
+   Challenge Yourself
+   <img src="./Screenshots/Challenge" alt="Challenge" width="200"/> 
+</p>
+
+<p align="center">
+   Compete Againts Others
+   <img src="./Screenshots/Leaderboard" alt="Leaderboard" width="200"/> 
+</p>
+
+## Demo Video
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=3oevWQ_c_Kc">
+    <img src="https://img.youtube.com/vi/3oevWQ_c_Kc/0.jpg" alt="MyWarehouse Demo" style="width:60%; height:auto;">
+  </a>
+</p>
+
