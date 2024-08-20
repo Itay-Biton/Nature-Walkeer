@@ -5,36 +5,27 @@
 
 ## Features
 
-- **Step Tracking**: Tracks steps taken during the day. Users earn coins based on the number of steps.
-- **Boosts and Upgrades**: Activate boosts that enhance step counting for a period. Purchase upgrades using earned coins.
-- **Plant Management**: Buy, care for, and harvest plants to earn additional rewards.
-- **Challenges**: Set and achieve daily step goals.
-- **User Profile**: Manage user profiles, including email, username, and profile picture.
-- **Firebase Integration**: Utilizes Firebase Authentication for user management and Firestore for storing user data.
+### 1. Step Tracking
+- **Real-Time Step Tracking**: The app tracks the user's steps throughout the day using Android's built-in step sensor. It updates the step count regularly when the app is in the foreground or background, ensuring that users receive coins for each step taken.
+- **Daily and Weekly Step Goals**: Users can set daily step goals, and the app keeps track of weekly step counts, helping users to stay motivated and active.
 
-## Installation
+### 2. In-App Currency
+- **Coins for Steps**: Every step taken by the user earns them coins. These coins can be used to purchase virtual plants and upgrades within the app.
+- **Boosts**: Users can activate boosts that multiply the number of coins earned per step for a limited time.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Itay-Biton/Nature-Walkeer.git
-   ```
-2. **Open in Android Studio**:
-   - Open Android Studio and select "Open an existing project."
-   - Navigate to the cloned repository and open it.
+### 3. Virtual Plant Care
+- **Plant Store**: Users can buy plants from a store using the coins they’ve earned.
+- **Plant Care**: Users can plant their plants and grow them until they are ready to be harvested for additional rewards.
 
-3. **Set up Firebase**:
-   - Add your Firebase project configuration files (e.g., `google-services.json`) to the `app` directory.
-   - Ensure Firebase Authentication and Firestore are set up in your Firebase Console.
+### 4. Firebase Integration
+- **Firestore Database**: The app uses Firestore to store user data, including step counts, coins, and plant information. This allows for real-time data syncing across devices.
+- **Firebase Authentication**: The app includes Firebase Authentication to manage user sign-up, login, and profile management securely. Users can sign in using email and password.
+- **Firebase Storage**: The app utilizes Firebase Storage for handling most of the content, such as pictures or icons. These images are stored securely, and their URLs are saved in Firestore.
 
-4. **Run the App**:
-   - Build and run the project on an Android device or emulator.
+### 5. User Management
+- **Profile Management**: Users can view and edit their profile information, including changing their password and profile picture.
+- **Leaderboard**: The app includes a leaderboard feature that ranks users based on their current amount of coins.
 
-## Usage
-
-- **Login/Register**: Users can create an account or log in with an existing account using email and password.
-- **Track Steps**: The app tracks steps while it is in the foreground or background.
-- **Manage Plants**: Use coins earned from walking to buy plants, care for them, and harvest rewards.
-- **Profile Management**: Users can update their profile picture, email, and password.
 
 ## Screenshots
 
@@ -80,4 +71,24 @@
     <img src="https://img.youtube.com/vi/3oevWQ_c_Kc/0.jpg" alt="MyWarehouse Demo" style="width:60%; height:auto;">
   </a>
 </p>
+
+
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Itay-Biton/Nature-Walkeer.git
+   ```
+2. **Open in Android Studio**:
+   - Open Android Studio and select "Open an existing project."
+   - Navigate to the cloned repository and open it.
+
+3. **Set up Firebase**:
+   - Add your Firebase project configuration files (e.g., `google-services.json`) to the `app` directory.
+   - Ensure Firebase Authentication and Firestore are set up in your Firebase Console.
+
+4. **Run the App**:
+   - Build and run the project on an Android device or emulator.
+
+
 
