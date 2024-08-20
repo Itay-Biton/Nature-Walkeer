@@ -67,8 +67,8 @@
 ## Demo Video
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=3oevWQ_c_Kc">
-    <img src="https://img.youtube.com/vi/3oevWQ_c_Kc/0.jpg" alt="MyWarehouse Demo" style="width:60%; height:auto;">
+  <a href="https://youtu.be/bsFHrgH8_00">
+    <img src="https://i9.ytimg.com/vi/bsFHrgH8_00/mq2.jpg?sqp=CKS6k7YG-oaymwEmCMACELQB8quKqQMa8AEB-AHwBIACyAmKAgwIABABGB8gZSgcMA8=&rs=AOn4CLCMTIH0E8GeMFdur3kWIVk9jeKakg" alt="Nature Walker Demo" style="width:60%; height:auto;">
   </a>
 </p>
 
