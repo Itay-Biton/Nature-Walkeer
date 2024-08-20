@@ -38,39 +38,39 @@
 
 ## Screenshots
 
-#Dashboard
+**Dashboard
 <p align="center">
-   <img src="./Screenshots/Dashboard1" alt="Dashboard 1" width="200"/> 
-   <img src="./Screenshots/Dashboard2" alt="Dashboard 2" width="200"/> 
+   <img src="./Screenshots/Dashboard1.png" alt="Dashboard 1" width="200"/> 
+   <img src="./Screenshots/Dashboard2.png" alt="Dashboard 2" width="200"/> 
 </p>
 
-#Sport Data
+**Sport Data
 <p align="center">
-   <img src="./Screenshots/Sport1" alt="Sport 1" width="200"/> 
-   <img src="./Screenshots/Sport2" alt="Sport 2" width="200"/> 
+   <img src="./Screenshots/Sport1.png" alt="Sport 1" width="200"/> 
+   <img src="./Screenshots/Sport2.png" alt="Sport 2" width="200"/> 
 </p>
 
-#Store
+**Store
 <p align="center">
-   <img src="./Screenshots/Store1" alt="Store 1" width="200"/> 
-   <img src="./Screenshots/Store2" alt="Store 2" width="200"/> 
-   <img src="./Screenshots/Store3" alt="Store 3" width="200"/> 
+   <img src="./Screenshots/Store1.png" alt="Store 1" width="200"/> 
+   <img src="./Screenshots/Store2.png" alt="Store 2" width="200"/> 
+   <img src="./Screenshots/Store3.png" alt="Store 3" width="200"/> 
 </p>
 
-#Plant Care
+**Plant Care
 <p align="center">
-   <img src="./Screenshots/Plant1" alt="Plant 1" width="200"/> 
-   <img src="./Screenshots/Plant2" alt="Plant 2" width="200"/> 
+   <img src="./Screenshots/Plant1.png" alt="Plant 1" width="200"/> 
+   <img src="./Screenshots/Plant2.png" alt="Plant 2" width="200"/> 
 </p>
 
-#Challenge Yourself
+**Challenge Yourself
 <p align="center">
-   <img src="./Screenshots/Challenge" alt="Challenge" width="200"/> 
+   <img src="./Screenshots/Challenge.png" alt="Challenge" width="200"/> 
 </p>
 
-#Compete Againts Others
+**Compete Againts Others
 <p align="center">
-   <img src="./Screenshots/Leaderboard" alt="Leaderboard" width="200"/> 
+   <img src="./Screenshots/Leaderboard.png" alt="Leaderboard" width="200"/> 
 </p>
 
 ## Demo Video
