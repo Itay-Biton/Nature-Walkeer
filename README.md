@@ -75,6 +75,7 @@
 
 ## Installation
 
+**To install this repository:**
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/Itay-Biton/Nature-Walkeer.git
@@ -89,6 +90,22 @@
 
 4. **Run the App**:
    - Build and run the project on an Android device or emulator.
+
+  
+## Download and Install Nature Walker
+
+1. **Download the App:**
+   - Click [here](https://github.com/Itay-Biton/Nature-Walkeer/releases/download/v1.0/Nature-Walker-Installation.apk) to download the latest version of the `Nature-Walker-Installation.apk`.
+
+2. **Bypass Google Virus Scan:**
+   - If prompted by Google, you can safely bypass the virus scan warning. The APK is secure and has been tested thoroughly.
+
+3. **Install the App:**
+   - Once downloaded, open the APK file and follow the on-screen instructions to install Nature Walker on your Android device.
+
+## Getting Started
+
+After installing the app, you can sign up with your email or use Google Authentication to log in. Start walking, earn coins, and enjoy the interactive features Nature Walker offers.
 
 
 
